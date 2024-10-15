@@ -31,7 +31,7 @@ const Navbar = () => {
 					<a
 						href="/"
 						className="text-xl font-bold text-neutral-400 transition-colors hover:text-white">
-						Adrian
+						Juanes
 					</a>
 					<button
 						onClick={toggleMenu}

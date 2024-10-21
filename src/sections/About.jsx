@@ -6,7 +6,7 @@ const About = () => {
 	const [hasCopied, setHasCopied] = useState(false)
 
 	const handleCopy = () => {
-		let promise = navigator.clipboard.writeText("juanescacha@hotmail.com")
+		navigator.clipboard.writeText("juanescacha@hotmail.com").then()
 
 		setHasCopied(true)
 
@@ -16,7 +16,9 @@ const About = () => {
 	}
 
 	return (
-		<section className="c-space my-20">
+		<section
+			className="c-space my-20"
+			id="about">
 			<div className="grid h-full grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 xl:grid-rows-6">
 				<div className="col-span-1 xl:row-span-3">
 					<div className="grid-container">
@@ -60,7 +62,6 @@ const About = () => {
 								backgroundColor="rgba(0, 0, 0, 0)"
 								backgroundImageOpacity={0.5}
 								showAtmosphere
-								// showGraticules
 								globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
 								bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
 							/>
